@@ -1,3 +1,5 @@
 console.log("b module");
 
-export const name = "Svetlana";
+export const myname = "Irina";
+
+export default 3;
