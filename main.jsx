@@ -1,7 +1,7 @@
 // import "./src/08.js";
 
-import imageUrl from "./src/img/javascript.svg";
-document.getElementById("test").src = imageUrl;
+// import imageUrl from "./src/img/javascript.svg";
+// document.getElementById("test").src = imageUrl;
 
 // const data = import.meta.glob("./src/10/*.js", { eager: true });
 // const data = import.meta.glob("./src/10/*.js", { as: "raw", eager: true }); // string
@@ -18,9 +18,20 @@ document.getElementById("test").src = imageUrl;
 //   });
 // });
 
-const modules = import.meta.glob("./src/10/*.js", {
-  eager: true,
-  import: "myname",
-});
+// const modules = import.meta.glob("./src/10/*.js", {
+//   eager: true,
+//   import: "myname",
+// });
 
-console.log(modules); // print object with values (myname)
+// console.log(modules); // print object with values (myname)
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./src/App.jsx";
+import "./index.css";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
